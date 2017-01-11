@@ -63,7 +63,7 @@ class SinC(Layer):
         super(SinC, self).__init__(**kwargs)
 
     def call(self, x, mask=None):
-        if x == 1.0:
+        if x == 0.0:
             return 1.0
         else: return tf.sin(x) / x
 
