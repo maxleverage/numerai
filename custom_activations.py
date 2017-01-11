@@ -17,7 +17,7 @@ class Additive(Layer):
         super(Additive, self).__init__(**kwargs)
 
     def call(self, x, mask=None):
-        return self.alpha * tf.atan(x) + self.beta * tf.sin(x)
+        return self.alpha * tf.atan(x) + self.beta * tf.cos(x)
 
     def get_config(self):
         config = {'alpha': float(self.alpha), 'beta': float(self.beta)}
