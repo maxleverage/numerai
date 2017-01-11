@@ -8,7 +8,7 @@ import numpy as np
 
 class Additive(Layer):
     '''Special additive activation function
-    Additive activation function combining arctan and sine using Tensorflow backend
+    Additive activation function combining arctan and cosine using Tensorflow backend
         '''
     def __init__(self, alpha=1.0, beta=1.0, **kwargs):
         self.supports_masking = True
